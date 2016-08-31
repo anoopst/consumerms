@@ -46,7 +46,7 @@ public class ConsumerService {
 				orderList.add(order1);
 				orderList.add(order2);
 				
-				return (new RestTemplate()).postForEntity(uri, orderList.get(0), String.class);
+				return (new RestTemplate()).postForEntity(uri+"/api/order", orderList.get(0), String.class);
 				
 			}
 		}
